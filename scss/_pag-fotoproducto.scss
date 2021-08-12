@@ -1,0 +1,333 @@
+@import 'variables.scss';
+
+/* ----------------------------------------------------------
+EMPIEZA PAG FOTOPRODUCTO */
+
+.sectionImgFotoProducto{
+    background-color: black;
+    position: relative;
+}
+
+
+
+.sectionImgFotoProducto a{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.sectionImgFotoProducto__Contenido{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/fotoProducto6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 100%, 0 64%);
+}
+.sectionImgFotoProducto__Contenido h1{
+    margin: auto;
+    background-color: rgb(5, 5, 5);
+    color: white;
+}
+
+
+     /* EMPIEZA DESCRIPCION FOTOPRODUCTO */
+
+.descripcionFP__row{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.descripcionFP__h2{
+    text-align: center;
+    padding: 10vh 0;
+    letter-spacing: 5px;
+    color: $color-h1;
+    font-weight: 800;
+    text-shadow: -3px 10px 6px rgba(104, 104, 104, 0.575);
+    font-size: 2rem;
+}
+
+.descripcionFP__imagenes{
+    position: relative;
+    margin: auto;
+    padding: 10vh 0;
+    max-width: 300px;
+    height: 450px;
+
+    img{
+        position: absolute;
+
+        width: 150px;
+        max-width: 500px;
+        height: 150px;
+        max-height: 500px;
+        object-fit: cover;
+        -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+    &::before{
+        position: absolute;
+        bottom: 0px;
+        left: 103px;
+        content: "";
+        height: 100px;
+        width: 100px;
+        background-color: $persian-indigo;
+        -webkit-clip-path: polygon(100% 60%, 50% 100%, 0 58%, 50% 91%);
+        clip-path: polygon(100% 60%, 50% 100%, 0 58%, 50% 91%);
+    }
+}
+
+.descripcionFP__imagenes img:nth-child(1){
+    top: 0;
+    left: 75px;
+}
+.descripcionFP__imagenes img:nth-child(2){
+    top: 120px;
+    left: 0px;
+}
+.descripcionFP__imagenes img:nth-child(3){
+    top: 120px;
+    right: 0px;;
+}
+.descripcionFP__imagenes img:nth-child(4){
+    top: 240px;
+    left: 75px;
+}
+
+
+.descripcionFP__parrafo{
+    position: relative;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 2rem;
+    
+}
+
+
+
+/* empieza 3 pasos  */
+
+
+.contenedor3pasos{
+    position: relative;
+    padding-top: 10vh;
+    background-color: violet;
+    padding-left: 0;
+    padding-right: 0;
+
+    &::after{
+        @include position(absolute, none, none, 5px, none);
+        content: "";
+        @include size(10px, 100%);
+        background-color: black;
+        z-index: 1;
+    }
+}
+
+
+.contenedor3pasos__pasos{
+    padding: 1rem;
+}
+.contenedor3pasos__span{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    background-color: rgba(141, 0, 141, 0.596);
+    /* border-radius: 100%; */
+    box-shadow: 12px -11px 0px -4px rgba(0,0,0,0.96);
+    -webkit-box-shadow: 12px -11px 0px -4px rgba(0,0,0,0.96);
+    -moz-box-shadow: 12px -11px 0px -4px rgba(0,0,0,0.96);
+}
+
+
+.contenedor3pasos__p{
+    text-align: center;
+    margin: 20px 10px;
+    padding: 20px 10px;
+    font-weight: 700;
+    border: 1px solid rgb(49, 43, 49);
+    border-radius: 10px;
+}
+
+
+/* Empìeza demostracion */
+
+.demostracion{
+    @include padding-alto(100px, 100px);
+    background-color: black;
+
+
+    .demostracion__divImg{
+        position: relative;
+        padding-right: 0;
+        padding-left: 0;
+        margin: auto;
+        margin-bottom: 80px;
+        @include size(250px, 200px);
+        z-index: 1;
+
+
+        &::before{
+            @include position(absolute, -35px, none,none, -35px);
+            content: "";
+            @include size(100px, 100px);
+            background-color: violet;
+            z-index: -1;
+        }
+        &::after{
+            @include position(absolute, none, -35px, -35px);
+            content: "";
+            @include size(150px, 100px);
+            border:10px solid rgba(238, 130, 238, 0.472);
+            z-index: -1;
+        }
+
+        .demostracion__Img{
+            object-fit: cover;
+            @include size(100%, 100%);
+        }
+
+    }
+    .demostracion__divParrafo{
+        position: relative;
+        text-align:right ;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 700;
+        @include padding-alto(50px, 0);
+        letter-spacing: 3px;
+        
+        
+        &::before{
+            @include position(absolute, 0, 0, none, none );
+            content: "";
+            @include size(1px, 150px);
+            background-color: violet;
+        }
+    }
+
+}
+
+/* Empieza demostracion2 */
+
+.demostracion2{
+    position: relative;
+    @include padding-alto(100px, 100px);
+    background-color: black;
+
+    &::after{
+        @include position(absolute, none, none, 0 , 0);
+        @include size(100%, 100%);
+        content: "";
+        background-color: rgba(22, 20, 22, 0.507);
+        clip-path: polygon(100% 0, 100% 34%, 0 100%, 0 10%);
+        z-index: 0;
+    }
+
+    .demostracion2__divImg{
+        position: relative;
+        padding-right: 0;
+        padding-left: 0;
+        margin: auto;
+        margin-bottom: 80px;
+        @include size(250px, 200px);
+        z-index: 1;
+
+
+        &::before{
+            @include position(absolute, -35px, -35px);
+            content: "";
+            @include size(150px, 100px);
+            background-color: rgb(85, 7, 85);
+            z-index: -1;
+        }
+        &::after{
+            @include position(absolute, none, none, -35px, -35px);
+            content: "";
+            @include size(150px, 100px);
+            border:10px solid rgba(85, 7, 85, 0.452);
+            z-index: -1;
+        }
+
+        .demostracion2__Img{
+            object-fit: cover;
+            @include size(100%, 100%);
+        }
+
+    }
+    .demostracion2__divParrafo{
+        position: relative;
+        text-align:left ;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        @include padding-alto(0, 50px);
+        z-index: 1;
+        
+        
+        &::before{
+            @include position(absolute, none, none, 50px, 10px );
+            content: "";
+            @include size(1px, 150px);
+            background-color: violet;
+        }
+    }
+
+}
+
+
+
+
+
+/* MEDIAQUERY */
+
+
+
+.sectionImgFotoProducto__Contenido h1{
+    margin: auto;
+    background-color: rgba(5, 5, 5, 0.644);
+    color: white;
+}
+
+@media (max-width: 500px){
+    
+/* PORTADA */
+
+    .sectionImgFotoProducto__Contenido{
+        h1{
+            font-size: 2rem;
+        }
+    }
+
+
+    /* FOTOPRODUCTO */
+
+    .divH3FotoProductoIndex{
+        text-align: center;
+    }
+    .contenedorETFIndex{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedorETFIndexDivH2{
+        letter-spacing: 5px;
+        font-size: 2rem;
+        padding: 20px;
+    }
+    .contenedorETFIndex > div:nth-child(3){
+        padding: 10px;
+    }
+
+}

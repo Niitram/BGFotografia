@@ -1,0 +1,19 @@
+@mixin size ($height:0 , $width:0,){
+    height: $height ;
+    width:$width;
+
+}
+
+@mixin padding-alto ($top, $bottom){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin position ($position, $top:none, $right:none, $bottom:none, $left:none) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+
+}

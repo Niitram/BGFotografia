@@ -1,0 +1,25 @@
+
+@mixin creando-col ($breackpoint){
+    @for $i from 1 to 12 {
+        .col-#{$breackpoint}-#{$i}{
+
+            width: (100%/12)* $i;
+        }
+    }
+}
+
+@media (min-width:1400px){
+    @include creando-col('xxl');
+}
+@media (min-width:1200px){
+    @include creando-col('xl');
+}
+@media (min-width:992px){
+    @include creando-col('lg');
+}
+@media (min-width:768px){
+    @include creando-col('md');
+}
+@media (min-width:576px){
+    @include creando-col('sm');
+}

@@ -1,0 +1,406 @@
+.principalIndex{
+    position: relative;
+    background-image: url("/img/fondo-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+.h1Index{
+    position: relative;
+    left: 50px;
+    top: 30px;
+    width: 700px;
+    color: rgb(209, 206, 206);
+    text-shadow: -3px 10px 6px rgba(73, 60, 93, 0.322);
+}
+.h1Index:after{
+    content: "";
+    display: block;
+    background-color: $color-h1;
+    height: 7px;
+    width: 100px;
+}
+
+
+.btnHeader{
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    padding: 3px 10px;
+    font-size: 25px;
+    color: rgb(86, 31, 148);
+    background-color: rgba(39, 39, 39, 0);
+    border-radius: 10px;
+    border-top: none;
+    border-right: none;
+    border-left-color: $russian-violet;
+    border-bottom-color:  $persian-indigo;
+}
+.btnHeader:hover{
+    color: $russian-violet;
+    background-color:  $mauve;
+    cursor: pointer;
+    box-shadow: -7px 5px 153px -29px rgba(131,41,171,0.49);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EMPIEZA SECCION FOTOPRODUCTO INDEX */
+
+.fotoProductoIndex{
+    background: linear-gradient(0deg, rgba(60,9,108,1) 0%, rgba(60,9,108,1) 27%, rgba(0,0,0,1) 62%);
+    display: grid;
+    grid-template-areas: "h3 h3"
+                        "fotos contenido";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 2fr;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.divH3FotoProductoIndex{
+    grid-area: h3;
+    color: $french-violet;
+    font-family: 'Mate SC', serif;
+    font-size: 2rem;
+    font-weight: none;
+
+}
+
+.divImagenesFotoProducto{
+    grid-area: fotos;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.divImagenesFotoProducto > div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.divImagenesFotoProducto > div > div{
+    height: 90%;
+    width: 33%;
+    margin: 5px;
+    
+}
+
+
+.divContenidoFotoProducto{
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 2fr .2fr;
+    row-gap: 10px;
+    justify-content: stretch;
+    align-items: center;
+
+    color: thistle;
+}
+.divContenidoFotoProducto h2{
+    text-align: center;
+}
+
+.divContenidoFotoProducto{
+    text-align: center;
+
+    p,
+    h2{
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 20px;
+        letter-spacing: 2px;
+    }
+    .divContenidoFotoProducto__h2{
+        font-size: 2rem;
+    }
+    a{
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EMPIEZA EDITO TU FOTO INDEX */
+
+.sectionEditoTFIndex{
+    background: linear-gradient(0deg, rgba(224,170,255,1) 53%, rgba(60,9,108,1) 100%);
+
+}
+.contenedorETFIndex{
+    width: 90%;
+    height: 100%;
+    background-color: rgba(224, 170, 255, 0.445);
+    border-radius: 80px;
+    margin: auto;
+    box-shadow: 0px -17px 16px -7px #000000;
+    display: grid;
+    grid-template-areas: "h2 h2 h2 h2 h2"
+                        "gif gif texto texto texto"
+                        "form form form form form";
+    gap: 10px;
+    grid-template-columns: 1fr 1fr repeat(3, .5fr) ;
+    grid-template-rows: .3fr 1fr 3fr;
+
+    .contenedorETFIndex__h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 10px 0;
+        color: black;
+    }
+    .contenedorETFIndex__p{
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: black;
+    }
+
+}
+.contenedorETFIndexDivH2{
+    grid-area: h2;
+    letter-spacing: 10px;
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: rgb(20, 2, 32);
+    text-shadow: -3px 10px 6px rgba(46, 41, 41, 0.582);
+    text-align: center;
+
+}
+.contenedorETFIndex > div:nth-child(2){
+    grid-area: img;
+    display:none;
+}
+
+.contenedorETFIndex > div:nth-child(3){
+    grid-area: gif;
+    padding: 10px;
+}
+.contenedorETFIndex > div:nth-child(4){
+    grid-area: texto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+.contenedorETFIndex form{
+    grid-area: form;
+	position:relative;
+    width:100%;
+	max-width:800px;
+    height: 1000px;
+	margin:auto;
+	background:url("/img/fondoForm.jpg") no-repeat;
+    background-size: cover;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.contenedorFormIndex{
+	position:absolute;
+    width:100%;
+	height:100%;
+	padding:30px 30px 30px 30px;
+	background:rgba(101, 40, 101, 0.637);
+}
+.contenedorFormIndex > div{
+    margin: 20px auto;
+    padding: 10px 0px;
+}
+.contenedorFormIndex input,
+.contenedorFormIndex select,
+.contenedorFormIndex textarea{
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+    border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(245, 245, 245, 0.794);
+    color:rgb(0, 0, 0);
+	font-size:1.6rem;
+    font-weight: 600;
+}
+.contenedorFormIndex label{
+    margin:0 15px 10px 0;
+	display:inline-block;
+	padding:15px 20px;
+    color:rgb(255, 255, 255);
+	font-size:1.6rem;
+    font-weight: 600;
+}
+.contenedorFormIndex h4{
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    margin: 0;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* EMPIEZA FOTOGRAFIA SOCIAL INDEX */
+
+
+.fotoSocialIndex{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 12%, rgba(224,170,255,1) 86%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoSocialIndex > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+}
+.fotoSocialIndex_DivContenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 50%;
+    min-width: 480px;
+    height: 100%;
+}
+.fotoSocialIndex_DivContenido > h2{ 
+    letter-spacing: 10px;
+    font-size: 3rem;
+    color: $color-h1;
+    text-shadow: -3px 10px 6px rgba(73, 60, 93, 0.322);
+}
+.fotoSocialIndex_DivContenido > p{
+    text-align: center;
+}
+
+.fotoSocialIndex_DivImg{
+    position: relative;
+    width: 50%;
+    min-width: 480px;
+    height: 100%;
+    margin: auto;
+
+}
+.fotoSocialIndex_DivImg > div:nth-child(1){
+    position: absolute;
+    z-index: 2;
+    left: 200px;
+    top: 100px;
+    padding: 5px;
+}
+.fotoSocialIndex_DivImg > div:nth-child(2){
+    position: absolute;
+    z-index: 4;
+    left: 0px;
+    top: 100px;
+    padding: 5px;
+}
+.fotoSocialIndex_DivImg > div:nth-child(3){
+    position: absolute;
+    z-index: 6;
+    left: 0px;
+    top: 300px;
+    padding: 5px;
+}
+.fotoSocialIndex_DivImg > div:nth-child(4){
+    position: absolute;
+    z-index: 8;
+    left: 200px;
+    top: 300px;
+    padding: 5px;
+}
+.fotoSocialIndex_DivImg > div:nth-child(5){
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    z-index: 10;
+    padding: 5px;
+    
+}
+.fotoSocialIndex_DivImg img{
+    border: black solid 2px;
+}
+
+
+/* FIN FOTOGRAFIA SOCIAL */
+
+
+
+
+
+@media (max-width: 900px) {
+
+    
+    
+    
+    
+    .fotoProductoIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 160vh;
+    } 
+
+
+    .contenedorETFIndex{
+        background-color: transparent;
+        box-shadow: none;
+        display: grid;
+        grid-template-areas: "h2 h2 h2 h2 h2"
+                            "texto texto texto texto texto"
+                            "gif gif gif gif gif"
+                            "form form form form form";
+        grid-template-rows: auto auto 400px auto;
+    
+    
+    
+    }
+    
+}
+@media (max-width: 768px) {
+    .contenedorETFIndex form{
+        height: 1250px;
+    }
+}

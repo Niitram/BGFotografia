@@ -1,0 +1,243 @@
+/* CLASES REUTILIZABLES */
+
+
+.flex-Center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.flexRow-space-evenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flexColumn-SpaceBetween{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgContentida{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.height--300px{
+    height: 300px;
+    
+}
+.object-fit--cover{
+    object-fit: cover;
+}
+
+.borderRadius-10{
+    border-radius: 10px;
+}
+
+
+.textAlign-center{
+    text-align: center;
+}
+
+.textareaTamaño{
+    font-size:1rem;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+    border:none;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+    height: 100px;
+    width: 80%;
+}
+
+.tamañoDivImg200px{
+    height: 200px;
+    width: 200px;
+}
+.tamañoDivImg300px{
+    height: 300px;
+    width: 300px;
+}
+
+.altoSection{
+    width: 100%;
+    height: 90vh;
+}
+.btnClaro-border--purple{
+    display: inline-block;
+    width: auto;
+    padding: 3px 10px;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: $purple;
+    color: $heliotrope;
+    border: 2px solid $purple;
+
+    color: $purple;
+    background-color: $mauve;
+}
+.btnClaro-border--purple:hover{
+    
+    background-color: $purple;
+    color: $heliotrope;
+    cursor: pointer;
+    box-shadow: -7px 5px 153px -29px rgba(131,41,171,0.49);
+    
+}
+.btnClaro-border-recto--purple{
+    display: inline-block;
+    width: auto;
+    padding: 3px 10px;
+    font-size: 25px;
+    color: $heliotrope;
+    border: 2px solid $purple;
+}
+.btnClaro-border-recto--purple:hover{
+    
+    background-color: $purple;
+    color: $heliotrope;
+    cursor: pointer;
+    box-shadow: -7px 5px 153px -29px rgba(131,41,171,0.49);
+    
+}
+.btnClaro{
+    display: inline-block;
+    width: auto;
+    padding: 3px 10px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: $mauve;
+}
+.btnClaro:hover{
+    color: $mauve;
+    background-color: $purple;
+    cursor: pointer;
+    box-shadow: -7px 5px 153px -29px rgba(131,41,171,0.49);
+    
+}
+.paddingTop--50px{
+    padding-top: 50px;
+}
+.padding--50px{
+    padding: 50px;
+}
+.filter--brightness{
+    filter: brightness(90%);
+}
+
+.font-weight--bold{
+    font-weight: bold;
+}
+.marginBottom-50px{
+    margin-bottom: 50px;
+}
+
+.max-height--600px{
+    max-height: 600px;
+}
+.titulos-decoracion{
+    letter-spacing: 5px;
+    color: $color-h1;
+    text-shadow: -3px 10px 6px rgba(104, 104, 104, 0.767);
+    font-weight: 700;
+}
+.margin--auto{
+    margin: auto;
+}
+
+
+.position--relative{
+    position: relative;
+}
+.position--absolute{
+    position: absolute;
+}
+/* BACKGROUND COLOR */
+
+.bg-color--slate-blue{
+    background-color: $slate-blue;
+}
+.bg-color--russian-violet{
+    background-color: $russian-violet;
+}
+.bg-color--russian-violet2{
+    background-color: $russian-violet-2;
+}
+.bg-color--persian-indigo{
+    background-color: $persian-indigo;
+}
+.bg-color--purple{
+    background-color: $purple;
+}
+.bg-color--french-violet{
+    background-color: $french-violet;
+}
+.bg-color--dark-orchid{
+    background-color: $dark-orchid;
+}
+.bg-color--heliotrope{
+    background-color: $heliotrope;
+}
+.bg-color--mauve{
+    background-color: $mauve;
+}
+
+/* COLOR */
+
+.color--late-blue{
+    color: $slate-blue;
+}
+.color--russian-violet{
+    color: $russian-violet;
+}
+.color--russian-violet2{
+    color: $russian-violet-2;
+}
+.color--persian-indigo{
+    color: $persian-indigo;
+}
+.color--purple{
+    color: $purple;
+}
+.color--french-violet{
+    color: $french-violet;
+}
+.color--dark-orchid{
+    color: $dark-orchid;
+}
+.color--heliotrope{
+    color: $heliotrope;
+}
+.color--mauve{
+    color: $mauve;
+}
+/* bordes */
+
+.border-2px-solid{
+    border: 2px solid $purple;
+}
+
+
+/* .....TRANSICIONES..... */
+.transition-all--2s-linear{
+    transition: all .2s linear;
+}
+
+
+/* -------:HOVERS------ */
+
+
+.transform--scale1-2:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 800;
+}
+
+
+/* TERMINAN CLASES REUTILIZABLES */

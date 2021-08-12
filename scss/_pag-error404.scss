@@ -1,0 +1,23 @@
+.contenedorError{
+    @include padding-alto(50px, 50px);
+
+    .contenedorError__contenido{
+        text-align: center;
+
+        h1,p{
+            @include padding-alto(20px, 20px);
+        }
+        
+    }
+
+    .contenedorError__divImg{
+        width: 70vw;
+        min-width: 310px;
+        margin: auto;
+
+        img{
+            width: 100%;
+
+        }
+    }
+}

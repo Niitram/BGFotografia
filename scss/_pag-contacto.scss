@@ -1,0 +1,280 @@
+/* PAG CONTACTO */
+.headerContacto{
+    background: linear-gradient(0deg, rgba(255,255,255,0.7147233893557423) 56%, rgba(0,0,0,0.9612219887955182) 100%);
+}
+
+.portadaContacto{
+    width: 100%;
+    height: 110vh;
+    background-image: url("/img/fotografa-sentada.png");
+    background-repeat: no-repeat;
+    background-position-x:left;
+    background-position-y: bottom;
+    
+
+}
+.portadaContacto__FormContacto{
+    position:relative;
+    top: 60px;
+    margin: auto;
+    width:100%;
+    max-width:800px;
+    height:450px;
+	background:url("/img/fondoForm.jpg") no-repeat;
+    background-size: cover;
+
+    opacity: .8;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.portadaContacto__contenedorFormContacto{
+    position:absolute;
+    width:100%;
+	height:100%;
+	padding:30px 30px 30px 30px;
+	background:rgba(68, 41, 68, 0.527);
+    
+
+
+}
+.portadaContacto__contenedorFormContacto input,
+.portadaContacto__contenedorFormContacto select,
+.portadaContacto__contenedorFormContacto textarea{
+    color: rgb(0, 0, 0);
+    font-size:15px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+    border:none;
+	padding:10px 20px;
+	border-radius:25px;
+	background:rgba(255, 255, 255, 0.856);
+    font-weight: 600;
+}
+
+.portadaContacto__contenedorFormContacto input:focus,
+.portadaContacto__contenedorFormContacto select:focus,
+.portadaContacto__contenedorFormContacto textarea:focus{
+    background-color: rgb(202, 202, 202);
+    border-bottom: 1px solid violet;
+}
+
+.portadaContacto__contenedorFormContacto label{
+    color: $mauve;
+	font-size:1.3rem;
+}
+.portadaContacto__contenedorFormContacto h1{
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    margin: 0;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    border-bottom: rgba(121, 121, 121, 0.712) solid 1px;
+}
+
+
+
+/* EMPIEZA PORTFOLIO */
+
+.porfolio{
+
+    padding-bottom: 100px;
+    z-index: -10;
+
+    background-color: black;
+
+    .porfolio__divH3{
+        text-align: center;
+        @include padding-alto(30px, 30px);
+        
+        h3{
+            @extend .porfolio__divH3;
+            font-size: 2rem;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 5px;
+        }
+    }
+
+    .porfolio__row{
+        max-width: 750px;
+        margin: auto;
+
+        .porfolio__contenedorImg--1{
+    
+            position: relative;
+            margin: auto;
+            @include size(350px, 250px);
+
+            &::before{
+                @include position(absolute, 130px, 150px);
+                content: "";
+                @include size(250px, 200px);
+                background-color: rgb(148, 7, 148);
+            }
+    
+            img:nth-child(1){
+                @include position(absolute, 0, none, none, 0);
+                @include size(200px, 150px);
+                object-fit: cover;
+                object-position: top;
+                padding: 5px;
+            }
+            img:nth-child(2){
+                @include position(absolute, 0, 0, none, none);
+                @include size(100px, 100px);
+                object-fit: cover;
+                object-position: top;
+                padding: 5px;
+            }
+            img:nth-child(3){
+                @include position(absolute, 100px, 0, none, none);
+                @include size(100px, 100px);
+                object-fit: cover;
+                object-position: top;
+                padding: 5px;
+            }
+            img:nth-child(4){
+                @include position(absolute, none, 0, 0, none);
+                @include size(150px, 250px);
+                object-fit: cover;
+                padding: 5px;
+            }
+        }
+        .porfolio__contenedorImg--2{
+    
+            position: relative;
+            margin: auto;
+            @include size(350px, 250px);
+            z-index: 2;
+    
+            img:nth-child(1){
+                @include position(absolute, 0, none, none, 0);
+                @include size(250px, 250px);
+                object-fit: cover;
+                object-position: top;
+                padding: 5px;
+            }
+            img:nth-child(2){
+                @include position(absolute, none, none, 0, 0);
+                @include size(100px, 125px);
+                object-fit: cover;
+                object-position: center;
+                padding: 5px;
+            }
+            img:nth-child(3){
+                @include position(absolute, none, 0, 0, none);
+                @include size(100px, 125px);
+                object-fit: cover;
+                object-position: right;
+                padding: 5px;
+            }
+        }
+        .porfolio__contenedorImg--3{
+    
+            position: relative;
+            margin: auto;
+            @include size(350px, 250px);
+
+            &::before{
+                @include position(absolute, -20px, none, none, 180px);
+                content: "";
+                @include size(150px, 150px);
+                border: 10px violet solid;
+                z-index: 0;
+            }
+    
+            img:nth-child(1){
+                @include position(absolute, 0, none, none, 0);
+                @include size(175px, 250px);
+                object-fit: cover;
+                object-position: top;
+                padding: 5px;
+            }
+            img:nth-child(2){
+                @include position(absolute, none, none, 0, 0);
+                @include size(175px, 250px);
+                object-fit: cover;
+                object-position: center;
+                padding: 5px;
+            }
+        }
+    }
+
+}
+
+/* FIN PORTFOLIO */
+
+/* EMPIEZA CAROUSEL PORTFOLIO */
+
+.carouselPortfolio{
+    background-color: black;
+    @include padding-alto(30px, 150px);
+    position: relative;
+
+
+    &::after{
+        content: "";
+        @include position(absolute, none, 20%, 50px);
+        @include size(5px, 20%);
+        background-color: rgb(53, 19, 70);
+        margin: auto;
+    }
+}
+
+
+/* FIN CAROUSEL PORTFOLIO */
+
+/* PREGUNTAS FRECUENTES */
+
+.estilo-icono{
+    font-size: 5rem;
+    color: rgba(142, 59, 149, 0.356);
+    text-shadow: -2px 3px 11px rgba(206,99,194,0.82);
+}
+
+.preguntas__h3{
+    margin: 20px;
+    padding: 5px;
+    font-weight: 600;
+    color: black;
+}
+
+
+
+
+/* EMPIEZAN MEDIAQUERY */
+
+
+@media (max-width: 800px) {
+
+    .portadaContacto{
+        height: 1000px;
+        
+    
+    }
+    .portadaContacto__FormContacto{
+        top:80px;
+        left: 0;
+        height: 530px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .porfolio{
+    
+        .porfolio__row{
+
+            .porfolio__contenedorImg--3{
+                &::before{
+                    @include position(absolute, -20px, none, none, 180px);
+                    content: "";
+                    @include size(150px, 100px);
+                }
+        
+
+            }
+        }
+    
+    }
+}

@@ -1,0 +1,604 @@
+@import 'variables.scss', 'mixin', 'clases-reutilizables';
+
+@import 'pag-contacto', 'pag-edito-tu-foto', 'pag-fotoproducto','pag-fotografia-social', 'pag-index', 'pag-error404';
+
+/* SOLO PARA EL DESAFIO */
+@import 'aplicando-SASSII';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Viaoda Libre', cursive;
+    box-sizing: border-box;
+}
+
+
+
+
+
+h1{
+    letter-spacing: 5px;
+    font-size: 3rem;
+}
+h1, 
+h2, 
+h3, 
+h4{
+    font-weight: none;
+    font-family: $fontMateSC;
+    
+}
+a{
+    text-decoration: none;
+}
+ul,
+ol,
+li{
+    list-style: none;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+
+
+/* ANIMACIONES */
+
+
+
+
+
+
+
+
+
+
+
+/* EMPIEZA HEADER */
+
+.navbar{
+    background-color: black;
+}
+.navbar-nav{
+    letter-spacing: 1px;
+
+    a:nth-child(1){
+        display: flex;
+        align-items: center;
+        &::after{
+            margin-left: 10px;
+            content: "";
+            background-color: rgb(90, 75, 104);
+            @include size(20px, 2px);
+            
+        }
+    }
+    a:nth-child(2){
+        display: flex;
+        align-items: center;
+        &::after{
+            margin-left: 10px;
+            content: "";
+            background-color: rgb(90, 75, 104);
+            @include size(20px, 2px);
+            
+        }
+    }
+    a:nth-child(3){
+        display: flex;
+        align-items: center;
+        &::after{
+            margin-left: 10px;
+            content: "";
+            background-color: rgb(90, 75, 104);
+            @include size(20px, 2px);
+            
+        }
+    }
+    a:nth-child(4){
+        display: flex;
+        align-items: center;
+        &::after{
+            margin-left: 10px;
+            content: "";
+            background-color: rgb(90, 75, 104);
+            @include size(20px, 2px);
+            
+        }
+    }
+
+}
+
+
+
+
+
+
+    /* EMPIEZA PROMOS Y DESCUENTOS INDEX */
+
+
+    .sectionPromos{
+        position: relative;
+    }
+    .sectionPromos::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(107, 4, 121, 0.561);
+        clip-path: polygon(50% 0%, 100% 0, 100% 5%, 31% 0, 0 5%, 0 0);
+    }
+    .sectionPromos__contenedorTarjetas{
+        justify-content: space-evenly;
+        margin: auto;
+        background-color: rgba(29, 28, 29, 0.308);
+        border-radius: 50px;
+
+    }
+
+    .sectionPromos__h2{
+        position: relative;
+        letter-spacing: 10px;
+        font-size: 3rem;
+        color: $color-h1;
+        text-shadow: -3px 10px 6px rgb(104, 104, 104);
+        text-align: center;
+
+    }
+    .sectionPromos__h2::after{
+        content: "";
+        position: absolute;
+        display: block;
+        left: 35%;
+        top: 80%;
+        height: 2px;
+        width: 30%;
+        background-color: $french-violet;
+    }
+    .cardDiseño{
+        margin: 10px;
+        background-color: rgba(158, 91, 158, 0.356);
+        box-shadow: 0px 12px 12px 13px rgba(0,0,0,0.65);
+    }
+    .card-text{
+        font-size: 1rem;
+    }
+    .list-group-item{
+        background-color: rgba(224, 170, 255, 0.493);
+    }
+
+    .list-group-item i{
+        margin-right: 10px;
+    }
+    .card-img-top{
+        padding-top: 3px;
+        height: 280px;
+        object-fit: cover;
+    }
+    .card{
+        transition: all .2s linear;
+
+    }
+    .card:hover{
+        transform: scale(1.2);
+    }
+    
+    .sectionPromos__contenedorTarjetas:hover .card:not(:hover){
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        opacity: .75;
+    }
+    
+
+    /* .wrap:hover img:not(:hover) {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        opacity: .75;
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+/* EMPIEZA CONOCEME MEJOR INDEX */
+
+
+.conocemeIndex{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.conocemeIndex > div{
+    letter-spacing: 10px;
+    font-size: 3rem;
+    color: $color-h1;
+    text-shadow: -3px 10px 6px rgba(73, 60, 93, 0.322);
+    text-align: center;
+}
+.conocemeIndex > div:nth-child(1){
+    padding-bottom: 80px;
+}
+.conocemeIndexContenido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p{
+        font-size: 1.5rem;
+        padding: 5px;
+        font-weight: 600;
+        color: black;
+    }
+
+}
+.conocemeIndexContenido > div:nth-child(1){
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+}
+.conocemeIndexContenido > div:nth-child(2){
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+}
+
+
+.fotoPerfil{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: black 1px solid;
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+
+footer{
+    width: 100%;
+    background-color: black;
+
+    .footerDivLinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        
+        &>div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            margin-bottom: 30px;
+
+            a{
+                color: white;
+                padding: 15px;
+            }
+        }
+    }
+    .footerDivLogo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        i{
+            color: $persian-indigo;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        span{
+            color: rgb(195, 195, 195);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+    }
+    .footerDivRedes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 30px auto;
+        i{
+            color: blanchedalmond;
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EMPIEZAN MEDIAS QUERYS */
+@media (max-width: 991px) {
+    .navbar-nav{
+    
+        a:nth-child(1){
+            &::after{
+                display: none;
+                
+            }
+        }
+        a:nth-child(2){
+            &::after{
+                display: none;
+                
+            }
+        }
+        a:nth-child(3){
+            &::after{
+                display: none;
+                
+            }
+        }
+        a:nth-child(4){
+            &::after{
+                display: none;
+                
+            }
+        }
+    
+    }
+}
+
+
+@media (max-width: 900px) {
+    
+
+    .h1Index{
+        width: 500px;
+        font-size: 1.3rem;
+        
+    }
+    
+
+
+
+
+
+
+
+    /* FOTOGRAFIA SOCIAL */
+
+    .fotoSocialIndex{
+        height: 150vh;
+        justify-content: start;
+    }
+    .fotoSocialIndex > div:nth-child(2){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 100%;
+        height: 80%;
+    }
+    .fotoSocialIndex_DivContenido{
+        justify-content: space-evenly;
+        min-width: 100%;
+        height: 50%;
+    }
+    .fotoSocialIndex_DivImg{
+        height: 50%;
+    }
+
+
+    /* CONOCEME MEJOR */
+
+    .conocemeIndex{
+        height: 120vh;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    /* HEADER */
+
+    .navBar__logo{
+        display: none;
+    }
+    .h1Index{
+        top: 100px;
+        width: 300px;
+        font-size: 1.3rem;
+        
+    }
+
+    .btnHeader{
+        
+        bottom: 0px;
+        right: 80px;
+        padding: 3px 10px;
+        font-size: 25px;
+        
+    }
+
+
+    /* FORM */
+    .contenedorETFIndex form{
+        height: 1000px;
+    }
+
+    .contenedorFormIndex h4{
+        padding-bottom: 0px;
+    }
+    .contenedorFormIndex{
+        padding:10px 10px 10px 10px;
+    }
+    .contenedorFormIndex > div{
+        margin: 10px auto;
+        padding: 15px 0px;
+    }
+    .contenedorFormIndex input,
+    .contenedorFormIndex select,
+    .contenedorFormIndex textarea{
+    
+        font-size:15px;
+    }
+    .contenedorFormIndex label{
+        color:#aaa;
+        font-size:1rem;
+    }
+
+
+    /* FOTOGRAFIA SOCIAL */
+
+    .fotoSocialIndex_DivContenido{
+        padding: 20px;
+        min-width: 100%;
+        height: 50%;
+    }
+    
+    .fotoSocialIndex_DivContenido > h2{ 
+        letter-spacing: 5px;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .fotoSocialIndex_DivImg{
+        position: relative;
+        min-width: 100%;
+        height: 50%;
+        margin: auto;
+    
+    }
+    .fotoSocialIndex_DivImg > div:nth-child(1){
+        left: 220px;
+        top: 100px;
+        padding: 5px;
+    }
+    .fotoSocialIndex_DivImg > div:nth-child(2){
+        left: 20px;
+        top: 100px;
+        padding: 5px;
+    }
+    .fotoSocialIndex_DivImg > div:nth-child(3){
+        left: 20px;
+        top: 300px;
+        padding: 5px;
+    }
+    .fotoSocialIndex_DivImg > div:nth-child(4){
+        left: 220px;
+        top: 300px;
+        padding: 5px;
+    }
+    .fotoSocialIndex_DivImg > div:nth-child(5){
+        left: 120px;
+        top: 200px;
+        padding: 5px;
+        
+    }
+
+    /* promos */
+
+    .sectionPromos::before{
+        -webkit-clip-path: polygon(50% 0%, 100% 0, 99% 2%, 28% 0, 0 2%, 0 0);
+        clip-path: polygon(50% 0%, 100% 0, 99% 2%, 28% 0, 0 2%, 0 0);
+    }
+
+
+    /* CONOCEME */
+
+    .conocemeIndex{
+        height: 150vh;
+    }
+    .conocemeIndexContenido{
+        flex-direction: column;
+    
+    }
+    
+
+    
+    
+
+}
+
+
+@media (max-width: 400px) {
+
+
+    /* HEADER */
+    .h1Index{
+        width: 200px;
+        font-size: 1.3rem;
+        
+    }
+
+    /*FOTOGRAFIA SOCIAL */
+
+    .fotoSocialIndex{
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+
+    .fotoSocialIndex_DivImg{
+        display: none;
+    }
+    .fotoSocialIndex_DivContenido{
+        height: 100%;
+    }
+
+
+    /* CONOCEME */
+
+    .conocemeIndex{
+        height: 120vh;
+    }
+    .conocemeIndexContenido{
+        justify-content: space-evenly;
+        padding: 20px;
+    
+    }
+    .conocemeIndex > div{
+        letter-spacing: 5px;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Editamos tus fotos dandols un estilo muy profesional">
+    <meta name="keywords" content="fotografo profesional, cumpleaños de 15, books, fotografia de productos, egresados, edicion de fotos">
+
+    <title>BGFotografia | Edito tu foto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fs-5">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><img src="../img/Logo/logoBGF-rosado227x72.png" alt="logo BG Fotografia"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav fw-bold">
+                        <a class="nav-link " href="../index.html">Inicio</a>
+                        <a class="nav-link " href="../pages/fotografia-social.html">Fotografia Social</a>
+                        <a class="nav-link " href="../pages/fotoproducto.html">Fotoproducto</a>
+                        <a class="nav-link active" aria-current="page" href="../pages/edito-tu-foto.html">Edito Tu Foto</a>
+                        <a class="nav-link " href="../pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Empieza la Imagen principal -->
+        <section class="portada">
+            <div>
+                <img src="../img/Logo/logoBGF-rosado227x72.png" alt="logo">
+            </div>
+            <div class="portada__contenido">
+                <h1>Edito tu foto</h1>
+                <img src="../img/reflectores.png" alt="reflectores de estudio">
+            </div>
+
+        </section>
+
+    </header>
+    <main>
+
+        <!-- decripcion de Edito tu foto -->
+        <section class="descripcionETF container-md">
+            <div class="descripcionETF__titulo">
+                <h2>¿Como funciona?</h2>
+            </div>
+            <div class="descripcionETF__pasos row">
+                <div class="col-md-6">
+                    <p>Eliges la foto que mas te gusta y nos la envias</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-file-import"></i>
+                </div>
+            </div>
+            <div class="descripcionETF__pasos row">
+                <div class="col-md-3">
+                    <i class="fal fa-edit"></i>
+                </div>
+                <div class="col-md-6">
+                    <p>Una vez recibida empezamos a editarla</p>
+                </div>
+            </div>
+            <div class="descripcionETF__pasos row">
+                <div class="col-md-6">
+                    <p>Listo! te enviaremos las fotos en prinmera calidad para que puedas compartirla con todos</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fal fa-check-circle"></i>
+                </div>
+            </div>
+            <div class="descripcionETF__logo">
+                <img src="../img/Logo/logoBGF-rosado227x72.png" alt="logo fotografia profesional">
+            </div>
+        </section>
+        <!-- empieza form -->
+        <section class="container">
+            <form class="form-ETF row" action="https://formspree.io/f/xbjqkana" method="POST">
+                <div class="form-ETF__span col-12">
+                    <span>Envianos tu imagen</span>
+                </div>
+                <div class="form-ETF__campos col-md-6 ">
+                    <label class="form-ETF__label" for="nombre">Nombre y Apellido</label>
+                    <input class="form-ETF__input" type="text" name="nombre" id="nombre"
+                        placeholder="Nombre y Apellido">
+                </div>
+                <div class="form-ETF__campos col-md-6 ">
+                    <label class="form-ETF__label" for="email">Email</label>
+                    <input class="form-ETF__input" type="email" name="_replyto" id="email" placeholder="Email">
+                </div>
+                <div class="form-ETF__campos col-md-6 ">
+                    <label class="form-ETF__label" for="promociones">Quiero recibir promociones y descuentos</label>
+                    <input class="form-ETF__input" type="checkbox" name="promociones" id="genero">
+                </div>
+                <div class="form-ETF__campos col-md-6">
+                    <button class="form-ETF__botones--enviar">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <!-- Empieza Promos -->
+        <section class="sectionPromos">
+            <div>
+                <h2 class="sectionPromos__h2 textAlign-center padding--50px">Promos y descuentos</h2>
+            </div>
+            <div class="sectionPromos__contenedorTarjetas container padding--50px row">
+                <div class="card borderRadius-10 cardDiseño mb-5 col-12 col-md-4" style="width: 18rem;">
+                    <img src="/img/fotoProducto6.jpg" class="card-img-top borderRadius-10" alt="camara sacando foto a comida">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight--bold">Promo FotoProducto</h5>
+                        <p class="card-text">Some quick example text to </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item font-weight--bold"><i class="fad fa-camera"></i>10 fotos por producto
+                        </li>
+                        <li class="list-group-item font-weight--bold"><i class="far fa-edit"></i>Edicion incluida</li>
+                        <li class="list-group-item font-weight--bold"><i class="fad fa-images"></i>Imagen en alta
+                            calidad</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link font-weight--bold">Comprar</a>
+                        <a href="fotoproducto.html" class="card-link font-weight--bold">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card borderRadius-10 cardDiseño mb-5 col-12 col-md-4" style="width: 18rem;">
+                    <img src="/img/gif-edicion-3.gif" class="card-img-top borderRadius-10" alt="editando rostro de un hombre">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight--bold">Promo Edito tu foto</h5>
+                        <p class="card-text">Some quick example text to </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item font-weight--bold"><i class="fad fa-camera"></i>5 fotos a eleccion
+                        </li>
+                        <li class="list-group-item font-weight--bold"><i class="far fa-edit"></i>Edicion incluida</li>
+                        <li class="list-group-item font-weight--bold"><i class="fad fa-images"></i>Imagen en alta
+                            calidad</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link font-weight--bold">Comprar</a>
+                        <a href="edito-tu-foto.html" class="card-link font-weight--bold">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card borderRadius-10 cardDiseño mb-5 col-12 col-md-4" style="width: 18rem;">
+                    <img src="/img/fiestadeegresado.jpg" class="card-img-top borderRadius-10" alt="chicas en una fiesta con luces neon">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight--bold">Promo Fotografia Social</h5>
+                        <p class="card-text">Some quick example text to </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item font-weight--bold"><i class="fad fa-camera"></i>50 fotos de la fiesta
+                        </li>
+                        <li class="list-group-item font-weight--bold"><i class="far fa-edit"></i>Edicion incluida</li>
+                        <li class="list-group-item font-weight--bold"><i class="fad fa-images"></i>Imagen en alta
+                            calidad</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link font-weight--bold">Comprar</a>
+                        <a href="fotografia-social.html" class="card-link font-weight--bold">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="footerDivLinks col-lg-4">
+                <div>
+                    <a href="../index.html">Inicio</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="fotografia-social.html">Fotografia Social</a>
+                </div>
+                <div>
+                    <a href="fotoproducto.html">FotoProducto</a>
+                    <a href="edito-tu-foto.html">Edito tu foto</a>
+                </div>
+            </div>
+            <div class="footerDivLogo col-lg-4">
+                <img src="../img/Logo/logoBGF-rosado227x72.png" alt="logo de BGfotografia">
+                <i class="fal fa-camera"></i>
+                <span>© 2021 BGFotografia</span>
+            </div>
+            <div class="footerDivRedes col-lg-4">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
