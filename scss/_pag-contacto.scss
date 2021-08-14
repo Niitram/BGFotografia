@@ -6,7 +6,7 @@
 .portadaContacto{
     width: 100%;
     height: 110vh;
-    background-image: url("/img/fotografa-sentada.png");
+    background-image: url("../img/fotografa-sentada.png");
     background-repeat: no-repeat;
     background-position-x:left;
     background-position-y: bottom;
@@ -20,7 +20,7 @@
     width:100%;
     max-width:800px;
     height:450px;
-	background:url("/img/fondoForm.jpg") no-repeat;
+	background:url("../img/fondoForm.jpg") no-repeat;
     background-size: cover;
 
     opacity: .8;
