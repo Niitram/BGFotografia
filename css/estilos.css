@@ -1184,10 +1184,10 @@ EMPIEZA PAG FOTOPRODUCTO */
 .contenedorETFIndex {
   width: 90%;
   height: 100%;
-  background-color: rgba(224, 170, 255, 0.445);
-  border-radius: 80px;
+  /*     background-color: rgba(224, 170, 255, 0.445);
+    border-radius: 80px; */
   margin: auto;
-  box-shadow: 0px -17px 16px -7px #000000;
+  /*     box-shadow: 0px -17px 16px -7px #000000; */
   display: grid;
   grid-template-areas: "h2 h2 h2 h2 h2" "gif gif texto texto texto" "form form form form form";
   gap: 10px;
@@ -1205,13 +1205,39 @@ EMPIEZA PAG FOTOPRODUCTO */
     color: black; }
 
 .contenedorETFIndexDivH2 {
+  position: relative;
   grid-area: h2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  width: 100%;
+  padding-top: 50px;
+  margin: 50px auto;
   letter-spacing: 10px;
   font-size: 2.3rem;
   font-weight: 500;
-  color: #140220;
-  text-shadow: -3px 10px 6px rgba(46, 41, 41, 0.582);
-  text-align: center; }
+  color: #5a189aff;
+  text-shadow: -3px 5px 6px rgba(46, 41, 41, 0.582);
+  overflow: hidden;
+  z-index: 1; }
+  .contenedorETFIndexDivH2 h2 {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: rgba(238, 130, 238, 0.76);
+    border-bottom: 2px solid #ff0ad6;
+    border-left: 2px solid #ff0ad6;
+    text-align: center; }
+    .contenedorETFIndexDivH2 h2::before {
+      position: absolute;
+      content: "";
+      border: 3px #ff0ad6 solid;
+      height: 6rem;
+      width: 50%;
+      right: -7%;
+      top: -14%;
+      z-index: -3; }
 
 .contenedorETFIndex > div:nth-child(2) {
   grid-area: img;
