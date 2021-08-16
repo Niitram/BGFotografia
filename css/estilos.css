@@ -1193,16 +1193,38 @@ EMPIEZA PAG FOTOPRODUCTO */
   gap: 10px;
   grid-template-columns: 1fr 1fr repeat(3, 0.5fr);
   grid-template-rows: .3fr 1fr 3fr; }
-  .contenedorETFIndex .contenedorETFIndex__h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 10px 0;
-    color: black; }
-  .contenedorETFIndex .contenedorETFIndex__p {
-    letter-spacing: 2px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: black; }
+  .contenedorETFIndex .contenedorETFIndex__contenido {
+    position: relative;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.13); }
+    .contenedorETFIndex .contenedorETFIndex__contenido::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 4px solid #ff0ad6;
+      border-left: 4px solid #ff0ad6;
+      height: 20%;
+      width: 20%; }
+    .contenedorETFIndex .contenedorETFIndex__contenido::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-bottom: 4px solid #ff0ad6;
+      border-right: 4px solid #ff0ad6;
+      height: 20%;
+      width: 20%; }
+    .contenedorETFIndex .contenedorETFIndex__contenido .contenedorETFIndex__h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 10px 0;
+      color: black; }
+    .contenedorETFIndex .contenedorETFIndex__contenido .contenedorETFIndex__p {
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: black; }
 
 .contenedorETFIndexDivH2 {
   position: relative;
@@ -1245,7 +1267,26 @@ EMPIEZA PAG FOTOPRODUCTO */
 
 .contenedorETFIndex > div:nth-child(3) {
   grid-area: gif;
-  padding: 10px; }
+  position: relative;
+  padding: 10px;
+  margin-bottom: 50px; }
+  .contenedorETFIndex > div:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    margin: auto;
+    background-color: #4e024e;
+    height: 3px;
+    width: 66%; }
+  .contenedorETFIndex > div:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    border-bottom: 4px solid #ff0ad6;
+    border-right: 4px solid #ff0ad6;
+    height: 20px;
+    width: 20px; }
 
 .contenedorETFIndex > div:nth-child(4) {
   grid-area: texto;
