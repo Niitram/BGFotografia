@@ -1,12 +1,13 @@
 @import 'variables';
 
 .portada{
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     position: relative;
+    border-bottom: 10px solid violet;
     .portada__fondo{
         position: absolute;
-        filter: blur(2px);
+        filter: blur(4px);
         height: 100%;
         width: 100%;
         img{
@@ -20,15 +21,14 @@
         position: absolute;
         top: 10%;
         left: 10%;
-        height: 80%;
+        height: 90%;
         width: 80%;
         margin: auto;
-        border: 2px solid violet;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        background-image: url("../img/gif-edicion-2.gif");
+        background-image: url("../img/gif-Edicion.gif");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -57,9 +57,7 @@
 
 /* EMPIEZA SECCION decripcion de Edito tu foto */
 
-.descripcionETF{
-    margin-top: 10vh ;
-}
+
 
 .descripcionETF__titulo{    
     text-align: center;
