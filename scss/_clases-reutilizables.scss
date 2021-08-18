@@ -106,13 +106,23 @@
     
 }
 .btnClaro{
-    display: inline-block;
-    width: auto;
+    position: relative;
     padding: 3px 10px;
     font-size: 25px;
+    font-weight: 600;
     color: rgb(0, 0, 0);
-    border-radius: 20px;
     background-color: $mauve;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        border-top: 3px violet solid;
+        border-left: 3px violet solid;
+        height: 40px;
+        width: 100px;
+    }
 }
 .btnClaro:hover{
     color: $mauve;
