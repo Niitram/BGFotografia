@@ -22,38 +22,6 @@
 }
 
 
-.btnHeader{
-    position: absolute;
-    bottom: 20px;
-    right: 100px;
-    padding: 3px 10px;
-    font-size: 25px;
-    color: rgb(86, 31, 148);
-    background-color: rgba(39, 39, 39, 0);
-    border-radius: 10px;
-    border-top: none;
-    border-right: none;
-    border-left-color: $russian-violet;
-    border-bottom-color:  $persian-indigo;
-}
-.btnHeader:hover{
-    color: $russian-violet;
-    background-color:  $mauve;
-    cursor: pointer;
-    box-shadow: -7px 5px 153px -29px rgba(131,41,171,0.49);
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
