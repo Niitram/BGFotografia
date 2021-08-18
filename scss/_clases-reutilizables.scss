@@ -112,7 +112,8 @@
     font-weight: 600;
     color: rgb(0, 0, 0);
     background-color: $mauve;
-
+    margin: 20px;
+    
     &::before{
         content: "";
         position: absolute;
