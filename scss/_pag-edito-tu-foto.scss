@@ -104,11 +104,16 @@
         font-size: 2rem;
         font-weight: 700;
     }
-    i{
-        font-size: 5rem;
-        margin: auto;
-        color: $dark-orchid;
+    .descripcionETF__divIcon{
+        display: flex;
+        justify-content: center;
+
+        i{
+            font-size: 5rem;
+            color: $dark-orchid;
+        }
     }
+
 }
 
 .descripcionETF__logo{

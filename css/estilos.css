@@ -592,10 +592,12 @@
     text-align: center;
     font-size: 2rem;
     font-weight: 700; }
-  .descripcionETF__pasos i {
-    font-size: 5rem;
-    margin: auto;
-    color: rgba(157, 78, 221, 0.431); }
+  .descripcionETF__pasos .descripcionETF__divIcon {
+    display: flex;
+    justify-content: center; }
+    .descripcionETF__pasos .descripcionETF__divIcon i {
+      font-size: 5rem;
+      color: rgba(157, 78, 221, 0.431); }
 
 .descripcionETF__logo {
   padding: 100px 0px;
