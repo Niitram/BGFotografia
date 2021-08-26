@@ -1090,7 +1090,18 @@ EMPIEZA PAG FOTOPRODUCTO */
 @media (max-width: 500px) {
   .sectionHeaderFotoSocial h1 {
     margin-left: 10px;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    width: 100px; }
+  .sectionHeaderFotoSocial__contenedorContenido p {
+    width: 40vw;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+    background-color: rgba(224, 170, 255, 0.883);
+    color: black;
+    font-weight: 700; }
+  .sectionHeaderFotoSocial__btn {
+    right: 10px; }
   .sectionPromos__h2 {
     font-weight: 700;
     font-size: 1.5rem !important; }
