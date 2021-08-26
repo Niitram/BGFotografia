@@ -1658,7 +1658,8 @@ p {
 
 /* EMPIEZA PROMOS Y DESCUENTOS INDEX */
 .sectionPromos {
-  position: relative; }
+  position: relative;
+  margin-bottom: 50px; }
 
 .sectionPromos::before {
   content: "";
@@ -1717,11 +1718,12 @@ p {
 .card:hover {
   transform: scale(1.2); }
 
-.sectionPromos__contenedorTarjetas:hover .card:not(:hover) {
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  opacity: .75; }
-
+/*     .sectionPromos__contenedorTarjetas:hover .card:not(:hover){
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        opacity: .75;
+    }
+     */
 /* .wrap:hover img:not(:hover) {
         -webkit-filter: grayscale(1);
         filter: grayscale(1);
